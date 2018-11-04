@@ -1,4 +1,4 @@
- <?php
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -23,7 +23,6 @@ die('Could not Connect My Sql:' .mysql_error());
 $i=0;
 $sql = "SELECT rollnum, name FROM dip";
 $result = $conn->query($sql);
-
 while($db_row = mysqli_fetch_array($result)) {
 ?>
 
@@ -42,5 +41,3 @@ $i++;
 
 
 </body>
-</html> 
-
